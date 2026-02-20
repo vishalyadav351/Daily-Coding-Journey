@@ -51,7 +51,7 @@ Unlike standard code dumps, this repo focuses on:
     <a href="https://www.linkedin.com/in/vishal-yadav-934407321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"_blank">
         <img src=https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white />
     </a>
-    <a href="https://github.com/vishalyadav351" target="_blank">
+    <a "href=https://github.com/vishalyadav351"_blank">
         <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
     <a href="mailto:your_email@gmail.com">
