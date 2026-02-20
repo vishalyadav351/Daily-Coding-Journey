@@ -38,7 +38,7 @@ Unlike standard code dumps, this repo focuses on:
 
 | Date | Category | Problem | Language | Difficulty | Solution |
 | :--- | :--- | :--- | :---: | :---: | :---: |
-| Feb 20, 2026 | Arrays | Two Sum | 🐍 Python | 🟢 Easy | [View](./Arrays/01-Two-Sum/) |
+| Feb 20, 2026 | Arrays | Two Sum | ♨️☕♨ java| 🟢 Easy | [View](./Arrays/01-Two-Sum/) |
 ## 🛠️ Languages & Tools
 
 <div align="center">
