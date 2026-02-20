@@ -23,4 +23,25 @@ I use a custom Python automation script to maintain a clean, standardized struct
     ├── 📄 README.md (Problem description & complexity)
     └── 📁 assets/
         └── 🖼️ dry-run.jpg (My visual breakdown)
-📊 Index & Progress TrackerDateCategoryProblemLanguageDifficultySolutionFeb 20, 2026ArraysTwo Sum🐍 Python🟢 EasyView🛠️ Tech Stack & Focus AreasLanguages: Python 🐍, Java ☕Core Focus: Data Structures, Algorithms, Problem Solving, OptimizationTools: VS Code, Git, GitHub, Python Scripting🤝 Connect with MeLet's learn and grow together!LinkedInLeetCodeGitHub
+
+## 📊 Index & Progress Tracker
+
+| Date | Category | Problem | Language | Difficulty | Solution |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| Feb 20, 2026 | Arrays | Two Sum | 🐍 Python | 🟢 Easy | [View](./Arrays/01-Two-Sum/) |
+
+## 🛠️ Tech Stack & Focus Areas
+
+* **Languages:** Python 🐍, Java ☕
+* **Core Focus:** Data Structures, Algorithms, Problem Solving, Optimization
+* **Tools:** VS Code, Git, GitHub, Python Scripting
+
+## 🤝 Connect with Me
+
+Let's learn and grow together!
+- [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN_PROFILE)
+- [LeetCode](https://leetcode.com/YOUR_LEETCODE_PROFILE)
+- [GitHub](https://github.com/vishalyadav351)
+
+---
+*⭐ "Talk is cheap. Show me the code." - Linus Torvalds*
