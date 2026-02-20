@@ -48,7 +48,7 @@ Unlike standard code dumps, this repo focuses on:
 ## 🤝 Connect with Me
 
 <div align="center">
-    <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+    <a href="https://www.linkedin.com/in/vishal-yadav-934407321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"_blank">
         <img src=https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white />
     </a>
     <a href="https://github.com/vishalyadav351" target="_blank">
