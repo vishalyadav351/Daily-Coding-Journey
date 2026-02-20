@@ -36,7 +36,6 @@ Unlike standard code dumps, this repo focuses on:
 
 ## 📊 Daily Progress Tracker
 
-## 📊 Daily Progress Tracker
 
 | Date | Topic | Problem | Difficulty | Time Taken | Approach | Language | Solution |
 |------|-------|----------|------------|------------|----------|----------|----------|
