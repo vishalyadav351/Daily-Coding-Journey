@@ -40,6 +40,8 @@ Unlike standard code dumps, this repo focuses on:
 |------|-------|----------|------------|------------|----------|----------|----------|
 | 20 Feb 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code](./Arrays/01-Two-Sum/) |
 | 21 Feb 2026 | Arrays | Remove Duplicates from Sorted Array | 🟢 Easy | 20 min | Two-Pointer (In-place) | Java | [View Code](./Arrays/02-Remove-Duplicates/) |
+| 22 Feb 2026 | Arrays | Shuffle the Array | 🟢 Easy | 18 min | Index Mapping | Java | [View Code](./Arrays/02-Shuffle the Array /) |
+
 
 ## 🛠️ Languages & Tools
 
