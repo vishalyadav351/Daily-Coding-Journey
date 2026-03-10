@@ -1,58 +1,54 @@
-<h2><a href="https://leetcode.com/problems/valid-parentheses">20. Valid Parentheses</a></h2><h3>Easy</h3><hr><p>Given a string <code>s</code> containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
+# 20. Valid Parentheses 🧩
 
-<p>An input string is valid if:</p>
+## 📝 Problem Description
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-<ol>
-	<li>Open brackets must be closed by the same type of brackets.</li>
-	<li>Open brackets must be closed in the correct order.</li>
-	<li>Every close bracket has a corresponding open bracket of the same type.</li>
-</ol>
+An input string is valid if:
+1. Open brackets must be closed by the same type of brackets.
+2. Open brackets must be closed in the correct order.
+3. Every close bracket has a corresponding open bracket of the same type.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+---
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()&quot;</span></p>
+## 💡 Logic & Approach
+To solve this problem efficiently, I used the *Stack* data structure. 
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+### Why Stack?
+Parentheses follow a *Nested Structure. The bracket that is opened **last* must be closed *first. This is the exact definition of **LIFO (Last In First Out)*, which is the core principle of a Stack.
 
-<p><strong class="example">Example 2:</strong></p>
+### Step-by-Step Algorithm:
+1. *Initialize* an empty Character Stack.
+2. *Traverse* each character c in the string:
+   - If c is an *opening bracket* ((, {, [), *push* it onto the stack.
+   - If c is a *closing bracket*:
+     - Check if the stack is empty. If yes, return false (Unbalanced).
+     - *Pop* the top element from the stack and compare it with c.
+     - If they are not a matching pair, return false.
+3. *Final Check: After the loop, if the stack is **empty*, return true. Otherwise, return false.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;()[]{}&quot;</span></p>
+---
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
+## 🚀 Dry Run (Example: s = "([)]")
 
-<p><strong class="example">Example 3:</strong></p>
+| Step | Char | Action | Stack Status | Comparison | Result |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | ( | Push | [ *(* ] | - | - |
+| 2 | [ | Push | [ (, *[* ] | - | - |
+| 3 | ) | Pop | [ *(* ] | Is ) match with [? | *❌ False* |
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;(]&quot;</span></p>
+---
 
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
+## 📊 Complexity Analysis
 
-<p><strong class="example">Example 4:</strong></p>
+- *Time Complexity:* $O(n)$  
+  We iterate through the string exactly once, where $n$ is the length of the string.
+  
+- *Space Complexity:* $O(n)$  
+  In the worst case (e.g., s = "((((("), we push all characters into the stack.
 
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([])&quot;</span></p>
+---
 
-<p><strong>Output:</strong> <span class="example-io">true</span></p>
-</div>
-
-<p><strong class="example">Example 5:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">s = &quot;([)]&quot;</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">false</span></p>
-</div>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
-</ul>
+## 🛠️ Tech Stack Used
+- *Language:* Java
+- *Data Structure:* Stack
+-
