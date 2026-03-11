@@ -41,7 +41,8 @@ Unlike standard code dumps, this repo focuses on:
 | 20 Feb 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code](./Arrays/01-Two-Sum/) |
 | 21 Feb 2026 | Arrays | Remove Duplicates from Sorted Array | 🟢 Easy | 20 min | Two-Pointer (In-place) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0026-remove-duplicates-from-sorted-array/) |
 | 22 Feb 2026 | Arrays | Shuffle the Array | 🟢 Easy | 20 min | Index Mapping (i & i+n) | Java | [View Code](./Arrays/02-Shuffle-the-Array/) |
-| 10 Mar 2026 | Stack | Valid Parentheses | 🟢 Easy | 25 min | Stack(LIFP) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0020-valid-parentheses) |
+| 10 Mar 2026 | Stack | Valid Parentheses | 🟢 Easy | 25 min | Stack(LIFO) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0020-valid-parentheses) |
+|11 Mar 2026|Linked List|[Marge Two Sorted List]| 🟢 Easy | 29 min |Two-Pointer | Java | [View Code](./Arrays/01-Two-Sum/) |
 
 ## 🛠️ Languages & Tools
 
