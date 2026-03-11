@@ -28,6 +28,9 @@
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
+📊 Complexity Analysis
+Time Complexity: O(n + m) — Where n and m are the number of nodes in both lists. Each node is visited exactly once.
+Space Complexity: O(1) — No extra space used except for a few pointers. (Optimized for production).
 
 <ul>
 	<li>The number of nodes in both lists is in the range <code>[0, 50]</code>.</li>
