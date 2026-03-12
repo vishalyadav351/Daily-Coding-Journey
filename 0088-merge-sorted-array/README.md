@@ -1,48 +1,51 @@
-<h2><a href="https://leetcode.com/problems/merge-sorted-array">88. Merge Sorted Array</a></h2><h3>Easy</h3><hr><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
+ Merge Sorted Array - LeetCode #88
 
-<p><strong>Merge</strong> <code>nums1</code> and <code>nums2</code> into a single array sorted in <strong>non-decreasing order</strong>.</p>
+## 📝 Problem Overview
+The objective is to merge two sorted integer arrays, nums1 and nums2, into a single sorted array. The operation must be performed *in-place* within nums1.
 
-<p>The final sorted array should not be returned by the function, but instead be <em>stored inside the array </em><code>nums1</code>. To accommodate this, <code>nums1</code> has a length of <code>m + n</code>, where the first <code>m</code> elements denote the elements that should be merged, and the last <code>n</code> elements are set to <code>0</code> and should be ignored. <code>nums2</code> has a length of <code>n</code>.</p>
+- nums1 size: m + n
+- nums2 size: n
+- Initial valid elements in nums1: m
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+---
 
-<pre>
-<strong>Input:</strong> nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
-<strong>Output:</strong> [1,2,2,3,5,6]
-<strong>Explanation:</strong> The arrays we are merging are [1,2,3] and [2,5,6].
-The result of the merge is [<u>1</u>,<u>2</u>,2,<u>3</u>,5,6] with the underlined elements coming from nums1.
-</pre>
+## 🚀 Technical Strategy: Backward Two-Pointer
+Instead of merging from the beginning (which would require extra $O(n)$ space or $O(n^2)$ shifting), I implemented a *Backward Two-Pointer* approach. 
 
-<p><strong class="example">Example 2:</strong></p>
+### Why this works:
+By comparing elements from the end (the largest values) and placing them into the available buffer space at the tail of nums1, we eliminate the need for an auxiliary array. This ensures the most efficient memory management.
 
-<pre>
-<strong>Input:</strong> nums1 = [1], m = 1, nums2 = [], n = 0
-<strong>Output:</strong> [1]
-<strong>Explanation:</strong> The arrays we are merging are [1] and [].
-The result of the merge is [1].
-</pre>
+---
 
-<p><strong class="example">Example 3:</strong></p>
+📊 Complexity Analysis
+Time Complexity: O(m + n) - Single pass through both arrays.
+Space Complexity: O(1) - Constant space, performing the merge in-place.
+🧪 Dry Run
+Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+Compare 3 and 6 \rightarrow Place 6 at nums1[5]
+Compare 3 and 5 \rightarrow Place 5 at nums1[4]
+Compare 3 and 2 \rightarrow Place 3 at nums1[3]
+Compare 2 and 2 \rightarrow Place 2 at nums1[2]
+Final Output: [1, 2, 2, 3, 5, 6]
+## 💻 Implementation (Java)
 
-<pre>
-<strong>Input:</strong> nums1 = [0], m = 0, nums2 = [1], n = 1
-<strong>Output:</strong> [1]
-<strong>Explanation:</strong> The arrays we are merging are [] and [1].
-The result of the merge is [1].
-Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
-</pre>
+```java
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1; 
+        int j = n - 1;
+        int k = m + n - 1;
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>nums1.length == m + n</code></li>
-	<li><code>nums2.length == n</code></li>
-	<li><code>0 &lt;= m, n &lt;= 200</code></li>
-	<li><code>1 &lt;= m + n &lt;= 200</code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums1[i], nums2[j] &lt;= 10<sup>9</sup></code></li>
-</ul>
-
-<p>&nbsp;</p>
-<p><strong>Follow up: </strong>Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>
+        while (j >= 0) {
+            
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+    }
+}
