@@ -37,36 +37,3 @@ To solve this at a high technical standard, I implemented an *Iterative Approach
 | *End* | 4 | null | Attach remaining list1 | dummy -> 1 -> 1 -> 2 -> 3 -> 4 -> 4 |
 
 
-
----
-
-### 💻 Production-Ready Solution (Java)
-
-```java
-/**
- * Definition for singly-linked list.
- */
-class Solution {
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        // Sentinel node to simplify edge cases and result pointer
-        ListNode dummy = new ListNode(-1);
-        ListNode current = dummy;
-
-        // Traverse both lists and link the smaller node
-        while (list1 != null && list2 != null) {
-            if (list1.val <= list2.val) {
-                current.next = list1;
-                list1 = list1.next;
-            } else {
-                current.next = list2;
-                list2 = list2.next;
-            }
-            current = current.next;
-        }
-
-        // Optimized: Attach the remaining sorted portion in O(1)
-        current.next = (list1 != null) ? list1 : list2;
-
-        return dummy.next;
-    }
-}
