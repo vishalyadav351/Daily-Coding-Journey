@@ -43,6 +43,7 @@ Unlike standard code dumps, this repo focuses on:
 | 22 Feb 2026 | Arrays | Shuffle the Array | 🟢 Easy | 20 min | Index Mapping (i & i+n) | Java | [View Code](./Arrays/02-Shuffle-the-Array/) |
 | 10 Mar 2026 | Stack | Valid Parentheses | 🟢 Easy | 25 min | Stack(LIFO) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0020-valid-parentheses) |
 |11 Mar 2026|Linked List|[Marge Two Sorted List]| 🟢 Easy | 29 min |Two-Pointer | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0021-merge-two-sorted-lists) |
+|12 Mar 2026 | Arrays | [Marge Sorted Array]| 🟢 Easy | 15 min | Two Pointer(Backward)| Java | [View Code]() |
 
 ## 🛠️ Languages & Tools
 
