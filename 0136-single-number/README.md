@@ -51,9 +51,10 @@ class Solution {
         return result;
     }
 }
-[15:03, 13/03/2026] VISHAL: Systematic Trace (Dry Run)
+
+ Systematic Trace (Dry Run)
 Input Dataset: nums = [4, 1, 2, 1, 2]
-[15:03, 13/03/2026] VISHAL: Iteration Element Operation Binary Computation Running Result
+ Iteration Element Operation Binary Computation Running Result
 Initial - Seed Value 000 0
 1 4 0 ^ 4 000 ^ 100 4
 2 1 4 ^ 1 100 ^ 001 5
