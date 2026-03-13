@@ -1,37 +1,42 @@
-<h2><a href="https://leetcode.com/problems/single-number">136. Single Number</a></h2><h3>Easy</h3><hr><p>Given a <strong>non-empty</strong>&nbsp;array of integers <code>nums</code>, every element appears <em>twice</em> except for one. Find that single one.</p>
-
-<p>You must&nbsp;implement a solution with a linear runtime complexity and use&nbsp;only constant&nbsp;extra space.</p>
-
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [2,2,1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">1</span></p>
-</div>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [4,1,2,1,2]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">4</span></p>
-</div>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<div class="example-block">
-<p><strong>Input:</strong> <span class="example-io">nums = [1]</span></p>
-
-<p><strong>Output:</strong> <span class="example-io">1</span></p>
-</div>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
-	<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>
-	<li>Each element in the array appears twice except for one element which appears only once.</li>
-</ul>
+[14:57, 13/03/2026] VISHAL: 🚀 Single Number - Optimal Bit Manipulation Solution
+📌 Problem Overview
+Given a non-empty array of integers nums, every element appears twice except for one. The goal is to find that single element.
+🎯 Objective
+Time Complexity: O(n)
+Space Complexity: O(1) (Constant Extra Space)
+🧠 Engineering Approach: The XOR Strategy
+To meet the strict O(1) space requirement, we avoid using HashMaps or Sorting. Instead, we leverage the Bitwise XOR (\oplus) operator properties:
+Identity: A \oplus 0 = A
+Self-Inverse: A \oplus A = 0
+Commutative & Associative: The order of operations does not change the result.
+By XORing all elements in the array, all pairs cancel each other out (A \oplus A = 0), leaving behind only the unique element.
+🛠️ Implementation (Java)
+/**
+ * Logic: Bit Manipulation (XOR)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
+class Solution {
+    public int singleNumber(int[] nums) {
+        int result = 0;
+        for (int num : nums) {
+            result ^= num; // XORing each element
+        }
+        return result;
+    }
+}
+🔍 Dry Run Analysis
+Input: nums = [4, 1, 2, 1, 2]
+Step Element Calculation Current Result (Binary)
+Initial - 0 000
+1 4 0 ^ 4 100 (4)
+2 1 4 ^ 1 101 (5)
+3 2 5 ^ 2 111 (7)
+4 1 7 ^ 1 110 (6)
+5 2 6 ^ 2 100 (4)
+📈 Performance Comparison
+Approach Time Complexity Space Complexity Notes
+Brute Force O(n^2) O(1) Too slow for large datasets.
+Sorting O(n \log n) O(1) Modifies the input array.
+Hash Set O(n) O(n) High memory overhead.
+XOR (Optimal) O(n) O(1) Most efficient solution.
