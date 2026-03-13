@@ -44,7 +44,7 @@ Unlike standard code dumps, this repo focuses on:
 | 10 Mar 2026 | Stack | Valid Parentheses | 🟢 Easy | 25 min | Stack(LIFO) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0020-valid-parentheses) |
 |11 Mar 2026|Linked List|[Marge Two Sorted List]| 🟢 Easy | 29 min |Two-Pointer | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0021-merge-two-sorted-lists) |
 |12 Mar 2026 | Arrays | [Marge Sorted Array]| 🟢 Easy | 15 min | Two Pointer(Backward)| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0088-merge-sorted-array) |
-|13 Mar 2026 | Arrays | Single Nuumber | 🟢 Easy | 15 min | Bit Manipulation (XOR) | Java | [View Code]() |
+|13 Mar 2026 | Arrays | Single Nuumber | 🟢 Easy | 15 min | Bit Manipulation (XOR) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0136-single-number) |
 
 
 ## 🛠️ Languages & Tools
