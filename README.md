@@ -45,7 +45,7 @@ Unlike standard code dumps, this repo focuses on:
 |11 Mar 2026|Linked List|[Marge Two Sorted List]| 🟢 Easy | 29 min |Two-Pointer | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0021-merge-two-sorted-lists) |
 |12 Mar 2026 | Arrays | [Marge Sorted Array]| 🟢 Easy | 15 min | Two Pointer(Backward)| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0088-merge-sorted-array) |
 |13 Mar 2026 | Arrays | Single Nuumber | 🟢 Easy | 15 min | Bit Manipulation (XOR) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0136-single-number) |
-| 14 Mar 2026 | *Backtracking* | *The k-th Happy String* | 🟠 *Medium* | *35 min* | *State-Space Pruning* | *Java* | [*View Code*]() |
+| 14 Mar 2026 | *Backtracking* | *The k-th Happy String* | 🟠 *Medium* | *35 min* | *State-Space Pruning* | *Java* | [*View Code*](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 
 ## 🛠️ Languages & Tools
 
