@@ -1,12 +1,12 @@
 class Solution {
-    int count = 0; // Kitni happy strings mil chuki hain
-    String result = ""; // Humara target string
+    int count = 0; 
+    String result = "";
 
     public String getHappyString(int n, int k) {
         count = 0;
         result = "";
         
-        // Backtracking function call
+      
         generateStrings(n, k, new StringBuilder());
         
         return result;
