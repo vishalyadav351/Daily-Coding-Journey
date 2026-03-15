@@ -1,45 +1,70 @@
-<h2><a href="https://leetcode.com/problems/fancy-sequence">1622. Fancy Sequence</a></h2><h3>Hard</h3><hr><p>Write an API that generates fancy sequences using the <code>append</code>, <code>addAll</code>, and <code>multAll</code> operations.</p>
+# 🌟 1622. Fancy Sequence - O(1) Bulk Operations Solution
 
-<p>Implement the <code>Fancy</code> class:</p>
+## 📌 Introduction
 
-<ul>
-	<li><code>Fancy()</code> Initializes the object with an empty sequence.</li>
-	<li><code>void append(val)</code> Appends an integer <code>val</code> to the end of the sequence.</li>
-	<li><code>void addAll(inc)</code> Increments all existing values in the sequence by an integer <code>inc</code>.</li>
-	<li><code>void multAll(m)</code> Multiplies all existing values in the sequence by an integer <code>m</code>.</li>
-	<li><code>int getIndex(idx)</code> Gets the current value at index <code>idx</code> (0-indexed) of the sequence <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>. If the index is greater or equal than the length of the sequence, return <code>-1</code>.</li>
-</ul>
+This repository contains a highly optimized Java solution for the *1622. Fancy Sequence* problem on LeetCode. The problem is classified as *Hard*, testing concepts in algorithmic efficiency and modular arithmetic.
 
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+### ❓ The Challenge
 
-<pre>
-<strong>Input</strong>
-[&quot;Fancy&quot;, &quot;append&quot;, &quot;addAll&quot;, &quot;append&quot;, &quot;multAll&quot;, &quot;getIndex&quot;, &quot;addAll&quot;, &quot;append&quot;, &quot;multAll&quot;, &quot;getIndex&quot;, &quot;getIndex&quot;, &quot;getIndex&quot;]
-[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]
-<strong>Output</strong>
-[null, null, null, null, null, 10, null, null, null, 26, 34, 20]
+The objective is to implement a dynamic sequence (list) that supports two types of operations:
+1.  *Element-wise Operations:* Standard append(val) and getIndex(idx).
+2.  *Bulk Operations:* Update the entire existing sequence with addAll(inc) or multAll(m).
 
-<strong>Explanation</strong>
-Fancy fancy = new Fancy();
-fancy.append(2);   // fancy sequence: [2]
-fancy.addAll(3);   // fancy sequence: [2+3] -&gt; [5]
-fancy.append(7);   // fancy sequence: [5, 7]
-fancy.multAll(2);  // fancy sequence: [5*2, 7*2] -&gt; [10, 14]
-fancy.getIndex(0); // return 10
-fancy.addAll(3);   // fancy sequence: [10+3, 14+3] -&gt; [13, 17]
-fancy.append(10);  // fancy sequence: [13, 17, 10]
-fancy.multAll(2);  // fancy sequence: [13*2, 17*2, 10*2] -&gt; [26, 34, 20]
-fancy.getIndex(0); // return 26
-fancy.getIndex(1); // return 34
-fancy.getIndex(2); // return 20
-</pre>
+The core difficulty lies in the bulk operations. A brute-force approach that iterates over all elements for addAll or multAll will lead to *Time Limit Exceeded (TLE)* on large inputs, as the constraints imply a need for a much more efficient solution than $O(N)$ per bulk update.
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+## 💡 Key Design Principles & Intuition
 
-<ul>
-	<li><code>1 &lt;= val, inc, m &lt;= 100</code></li>
-	<li><code>0 &lt;= idx &lt;= 10<sup>5</sup></code></li>
-	<li>At most <code>10<sup>5</sup></code> calls total will be made to <code>append</code>, <code>addAll</code>, <code>multAll</code>, and <code>getIndex</code>.</li>
-</ul>
+To solve this, we must use a *Lazy Propagation* style approach. Instead of updating every single number in the list for bulk operations, we can:
+1.  *Track Global State:* Maintain two global variables to store the cumulative transformation:
+    * multiplier: Current total multiplication factor for the whole sequence.
+    * adder: Current total addition value for the whole sequence.
+2.  *Store Normalized Values:* This is the critical trick. When a new value v is appended, it shouldn't be affected by previous global operations. To achieve this, we store a "normalized" version of v such that the current global state, when applied to it, reverses the normalization and results in v.
+3.  *Algebraic Transformation:* The final value of any stored number $x$ can be represented by the linear function:
+    $$\text{Actual Value} = (x \times \text{multiplier}) + \text{adder}$$
+
+## 🛠️ Algorithm & Implementation Details
+
+
+
+The operations are implemented with the following time and space complexity:
+
+| Operation | Logical Action | Mathematical State Update (Modulo) | Time Complexity | Space Complexity |
+| :--- | :--- | :--- | :--- | :--- |
+| *Fancy()* | Initialize state | multiplier = 1, adder = 0 | $O(1)$ | $O(1)$ |
+| *append(val)* | *Normalize & Store:* $x = (\text{val} - \text{adder}) \times \text{multiplier}^{-1}$ | Add $x$ to nums | *$O(\log(MOD))$* | $O(1)$ |
+| *addAll(inc)* | Update additive state | adder = (adder + inc) % MOD | *$O(1)$* | $O(1)$ |
+| *multAll(m)* | Update multiplicative state | multiplier = (multiplier \times m) % MOD<br>adder = (adder \times m) % MOD | *$O(1)$* | $O(1)$ |
+| *getIndex(idx)* | *De-normalize & Return:* $(\text{nums}[idx] \times \text{multiplier}) + \text{adder}$ | N/A | *$O(1)$* | $O(1)$ |
+
+### 🚨 Crucial Concept: Modular Multiplicative Inverse
+
+In modular arithmetic, direct division is not possible. To perform the division (val - adder) / multiplier during normalization, we must multiply by the *Modular Multiplicative Inverse* of multiplier. 
+
+We use *Fermat's Little Theorem*, which states that if $p$ is a prime number (like our $10^9 + 7$), then:
+$$a^{p-2} \equiv a^{-1} \pmod{p}$$
+
+We calculate $a^{p-2}$ efficiently using a standard binary exponentiation function (power or pow), ensuring this inverse is computed in $O(\log(MOD))$ time.
+
+## 💻 Java Code Solution
+
+```java
+import java.util.*;
+
+/**
+ * Highly optimized O(1) solution for bulk updates in Fancy Sequence.
+ * Uses algebraic normalization and modular inverse (Fermat's Little Theorem) 
+ * to handle large test cases without Time Limit Exceeded errors.
+ */
+class Fancy {
+    private final List<Long> seq; // Stored normalized values
+    private long mVal, aVal; // Global state trackers
+    private static final int MOD = 1_000_000_007;
+
+    public Fancy() {
+        this.seq = new ArrayList<>();
+        this.mVal = 1;
+        this.aVal = 0;
+    }
+
+    /**
+     * Appends a value, normalizing it to be independent of cur…
