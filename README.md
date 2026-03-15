@@ -46,7 +46,7 @@ Unlike standard code dumps, this repo focuses on:
 |12 Mar 2026 | Arrays | [Marge Sorted Array]| 🟢 Easy | 15 min | Two Pointer(Backward)| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0088-merge-sorted-array) |
 |13 Mar 2026 | Arrays | Single Nuumber | 🟢 Easy | 15 min | Bit Manipulation (XOR) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0136-single-number) |
 | 14 Mar 2026 | *Backtracking* | *The k-th Happy String* | 🟠 *Medium* | *35 min* | *State-Space Pruning* | *Java* | [*View Code*](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
-| 15 Mar 2026 | Math / Design | [1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/) | 🔴 Hard | 45 min | Algebraic Normalization (Lazy Propagation) | Java | [View Code]() |
+| 15 Mar 2026 | Math / Design | [1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/) | 🔴 Hard | 55 min | Algebraic Normalization (Lazy Propagation) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1622-fancy-sequence) |
 
 ## 🛠️ Languages & Tools
 
