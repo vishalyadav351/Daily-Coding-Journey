@@ -28,7 +28,7 @@ class Fancy {
     }
 
     public int getIndex(int idx){
-        if(idx >= number.size())
+        if(idx >= numbers.size())
         return-1;
         long result = (numbers.get(idx) * multiplier + adder) % MOD;
         return (int) result;
