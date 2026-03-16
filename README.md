@@ -47,7 +47,7 @@ Unlike standard code dumps, this repo focuses on:
 |13 Mar 2026 | Arrays | Single Nuumber | 🟢 Easy | 15 min | Bit Manipulation (XOR) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0136-single-number) |
 | 14 Mar 2026 | *Backtracking* | *The k-th Happy String* | 🟠 *Medium* | *35 min* | *State-Space Pruning* | *Java* | [*View Code*](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | 15 Mar 2026 | Math / Design | [1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/?envType=daily-question&envId=2026-03-15) | 🔴 Hard | 55 min | Algebraic Normalization (Lazy Propagation) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1622-fancy-sequence) |
-| 16 Mar 2026 | Matrix / Geometry | 1878. Get Biggest Three Rhombus Sums | 🟡 Medium | 40 min | Boundary Traversal | Java | [View Code]() |
+| 16 Mar 2026 | Matrix / Geometry | 1878. Get Biggest Three Rhombus Sums | 🟡 Medium | 40 min | Boundary Traversal | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 
 ## 🛠️ Languages & Tools
 
