@@ -48,8 +48,8 @@ Unlike standard code dumps, this repo focuses on:
 | 14 Mar 2026 | *Backtracking* | *The k-th Happy String* | 🟠 *Medium* | *35 min* | *State-Space Pruning* | *Java* | [*View Code*](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | 15 Mar 2026 | Math / Design | [1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/?envType=daily-question&envId=2026-03-15) | 🔴 Hard | 55 min | Algebraic Normalization (Lazy Propagation) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1622-fancy-sequence) |
 | 16 Mar 2026 | Matrix / Geometry | 1878. Get Biggest Three Rhombus Sums | 🟡 Medium | 40 min | Boundary Traversal | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid) |
-| 17 Mar 2026 |Matrix / Greedy | [1727. Largest Submatrix] | 🟡 Medium | 45 min | Height Calculation & Sorting| Java | [View Code]() |
-| 18-Mar-2026 | Matrix / DP | [3070. Count Submatrices...](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | 🟠 Medium | 30 min | 2D Prefix Sum + Pruning | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3338-count-submatrices-with-top-left-element-and-sum-less-than-k) |
+| 17 Mar 2026 |Matrix / Greedy | [1727. Largest Submatrix] | 🟡 Medium | 45 min | Height Calculation & Sorting| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1727-largest-submatrix-with-rearrangements) |
+| 18-Mar-2026 | Matrix / DP | [3070. Count Submatrices...](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | 🟠 Medium | 45 min | 2D Prefix Sum + Pruning | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3338-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 
 
 ## 🛠️ Languages & Tools
