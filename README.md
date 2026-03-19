@@ -50,6 +50,7 @@ Unlike standard code dumps, this repo focuses on:
 | 16 Mar 2026 | Matrix / Geometry | 1878. Get Biggest Three Rhombus Sums | 🟡 Medium | 40 min | Boundary Traversal | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | 17 Mar 2026 |Matrix / Greedy | [1727. Largest Submatrix] | 🟡 Medium | 45 min | Height Calculation & Sorting| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1727-largest-submatrix-with-rearrangements) |
 | 18-Mar-2026 | Matrix / DP | [3070. Count Submatrices...](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | 🟠 Medium | 45 min | 2D Prefix Sum + Pruning | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3338-count-submatrices-with-top-left-element-and-sum-less-than-k) |
+| 19-Mar-2026 | Matrix / Prefix Sum | [3212. Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/) | 🟡 Medium | 40 min | 2D Prefix Sum + Inclusion-Exclusion | Java | [View Code]()
 
 
 ## 🛠️ Languages & Tools
