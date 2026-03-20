@@ -20,12 +20,10 @@ class Solution {
             ans[i][0] = calculateMin(map);
 
             for (int j = 1; j < resN; j++) {
-                
                 for (int r = i; r < i + k; r++) {
                     int out = grid[r][j - 1];
-                    int count = map.get(out);
-                    if (count == 1) map.remove(out);
-                    else map.put(out, count - 1);
+                    if (map.get(out) == 1) map.remove(out);
+                    else map.put(out, map.get(out) - 1);
                 }
                 
                 for (int r = i; r < i + k; r++) {
@@ -43,10 +41,7 @@ class Solution {
         int minDiff = Integer.MAX_VALUE;
         Integer prev = null;
         
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > 1) return 0;
-            
-            int curr = entry.getKey();
+        for (int curr : map.keySet()) {
             if (prev != null) {
                 minDiff = Math.min(minDiff, curr - prev);
             }
