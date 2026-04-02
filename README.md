@@ -58,6 +58,8 @@ Unlike standard code dumps, this repo focuses on:
 | 26 Mar 2026 | Matrix / Prefix Sum | 3546. Equal Sum Grid Partition I  | 🟡 Medium| 50 min | Prefix Sum (Row/Column Wise) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3546-equal-sum-grid-partition-i) |
 | 27 Mar 2026 | Matrix / Prefix Sum | 3548. Equal Sum Grid Partition II | 🔴 Hard | 65 min | Prefix Sum + Connectivity Check (Bridges/Articulation) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3548-equal-sum-grid-partition-ii) |
 | 01-Apr-2026 | Simulation / Stack | 2751. Robot Collisions | 🔴 Hard | 75 min | Sorting + Stack-based Collision Handling | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2751-robot-collisions) |
+|  31-Mar-2026 | Greedy / String | 3474. Smallest Generated String  |  🔴 Hard  | 69 min | Greedy Filling + Conflict Checking + Backtracking Logic | Java | [View Code]() |
+
 
 
 
