@@ -64,6 +64,9 @@ Unlike standard code dumps, this repo focuses on:
 | 30-Mar-2026 | String / Sorting | 2840. Check Equal Strings II | 🟡 Medium  | 45 min | Even/Odd Index Frequency Counting | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 |  31-Mar-2026 | Greedy / String | 3474. Smallest Generated String  |  🔴 Hard  | 69 min | Greedy Filling + Conflict Checking + Backtracking Logic | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3474-lexicographically-smallest-generated-string) |
 | 01-Apr-2026 | Simulation / Stack | 2751. Robot Collisions | 🔴 Hard | 75 min | Sorting + Stack-based Collision Handling | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2751-robot-collisions) |
+| 07-Apr-2026   | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code](.) |
+| 08-Apr-2026  | Simulation / Math | 3653. XOR After Range Multi. | 🟡 Medium | 39 min | Iterative Simulation | Java | [View Code]() |
+
 
 
 
