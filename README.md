@@ -64,7 +64,8 @@ Unlike standard code dumps, this repo focuses on:
 | 30-Mar-2026 | String / Sorting | 2840. Check Equal Strings II | 🟡 Medium  | 45 min | Even/Odd Index Frequency Counting | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 |  31-Mar-2026 | Greedy / String | 3474. Smallest Generated String  |  🔴 Hard  | 69 min | Greedy Filling + Conflict Checking + Backtracking Logic | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3474-lexicographically-smallest-generated-string) |
 | 01-Apr-2026 | Simulation / Stack | 2751. Robot Collisions | 🔴 Hard | 75 min | Sorting + Stack-based Collision Handling | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2751-robot-collisions) |
-| 04-Apr-2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+|02-Apr-2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+| 03-Apr-2026 | Greedy / Sorting | 3661. Max Walls Destroyed| 🔴 Hard | 1 hr 15 min |Sorting + Binary Search | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3661-maximum-walls-destroyed-by-robots) |
 | 04-Apr-2026 | String / Matrix | 2075. Decode Slanted Ciphertext | 🟡 Medium | 55 min | Diagonal Traversal | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2075-decode-the-slanted-ciphertext) |
 | 05-Apr-2026  | String / Simulation | 657. Robot Return to Origin | 🟢 Easy | 25 min | Coordinate Tracking (x, y) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0657-robot-return-to-origin) |
 | 06-Apr-2026 | Hash Set / Simulation | 874. Walking Robot Simulation|🟡 Medium | 55 min | Hash Set for Obstacles) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0874-walking-robot-simulation) |
