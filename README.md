@@ -71,7 +71,8 @@ Unlike standard code dumps, this repo focuses on:
 | 06-Apr-2026 | Hash Set / Simulation | 874. Walking Robot Simulation|🟡 Medium | 55 min | Hash Set for Obstacles) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/0874-walking-robot-simulation) |
 | 07-Apr-2026   | Simulation / Design | 2069. Walking Robot Sim II | 🟡 Medium| 49 min | Perimeter Modulo Logic | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2069-walking-robot-simulation-ii) |
 | 08-Apr-2026  | Simulation / Math | 3653. XOR After Range Multi. | 🟡 Medium | 39 min | Iterative Simulation | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3653-xor-after-range-multiplication-queries-i) |
-| 11-Apr-2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+|10-Apr-2026  | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+| 11-Apr-2026 |Arrays / Hashing | 3740. Minimum Distance Between Three Elements | 🟢 Easy | 20 min |Sorting Indices / Sliding Window (Size 3) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3740-minimum-distance-between-three-equal-elements-i) |
 | 12-Apr-2026 |Dynamic Programming | 1320. Minimum Distance to Type a Word | 🔴 Hard | 65 min |3D DP / Top-Down Memoization | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 |13-Apr-2026| Arrays | 1848. Minimum Distance to the Target Element | 🟢 Easy | 25 min |Linear Search / Absolute Difference | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1848-minimum-distance-to-the-target-element) |
 
