@@ -6,22 +6,21 @@ public class Solution {
         int minDistance = Integer.MAX_VALUE;
         boolean found = false;
 
-        for (int i = 0; i < nums.length; i++) {
-            int current = nums[i];
-            int mirrorOfCurrent = reverse(current);
-            if (map.containsKey(mirrorOfCurrent)) {
-                int distance = i - map.get(mirrorOfCurrent);
+        for (int j = 0; j < nums.length; j++) {
+            int currentVal = nums[j];
+            if (map.containsKey(currentVal)) {
+                int i = map.get(currentVal);
+                int distance = j - i;
                 minDistance = Math.min(minDistance, distance);
                 found = true;
             }
 
-           
-            map.put(current, i);
+            int reversed = reverse(currentVal);
+                        map.put(reversed, j);
         }
 
         return found ? minDistance : -1;
     }
-
     private int reverse(int n) {
         int rev = 0;
         while (n > 0) {
