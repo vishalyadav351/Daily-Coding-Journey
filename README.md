@@ -79,7 +79,7 @@ Unlike standard code dumps, this repo focuses on:
 | 19 Apr 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
 | 20 Apr 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
 | 21 Apr 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
-| 23 Apr 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+| 23 Apr 2026 | String / Matrix | Words Within Two Edits of Dictionary | 🟠 Medium | 45 min | Brute Force / Counting| Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/2452-words-within-two-edits-of-dictionary) |
 | 24 Apr 2026 |String / Simulation | Furthest Point From Origin | 🟢 Easy | 25 min | Counting / Greedy | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/blob/main/2833-furthest-point-from-origin/2833-furthest-point-from-origin.java) |
 
 
