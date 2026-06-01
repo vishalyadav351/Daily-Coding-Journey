@@ -76,7 +76,7 @@ Unlike standard code dumps, this repo focuses on:
 |11-Apr-2026  | Arrays / Hashing | 3741. Minimum Distance Between Three Elements II | 🟡 Medium | 40 min | HashMap + Frequency Tracking (O(N)) | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/3741-minimum-distance-between-three-equal-elements-ii) |
 | 12-Apr-2026 |Dynamic Programming | 1320. Minimum Distance to Type a Word | 🔴 Hard | 65 min |3D DP / Top-Down Memoization | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 |13-Apr-2026| Arrays | 1848. Minimum Distance to the Target Element | 🟢 Easy | 25 min |Linear Search / Absolute Difference | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/tree/main/1848-minimum-distance-to-the-target-element) |
-| 24 Apr 2026 | Arrays | Two Sum | 🟢 Easy | 25 min | HashMap (Optimized) | Java | [View Code]() |
+| 24 Apr 2026 |String / Simulation | Furthest Point From Origin | 🟢 Easy | 25 min | Counting / Greedy | Java | [View Code](https://github.com/vishalyadav351/Daily-Coding-Journey/blob/main/2833-furthest-point-from-origin/2833-furthest-point-from-origin.java) |
 
 
 
